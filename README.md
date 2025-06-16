@@ -39,12 +39,10 @@ private final String apiSecret = "my-api-secret";
 ProtectClient client = new ProtectClient(host, apiKey, apiSecret);
 ```
 
-### Examples
-
 Several examples are
 provided [here](client/src/test/java/com/taurushq/sdk/protect/client/ProtectClientIntegrationTest.java).
 
-#### Example: create an address
+For example, to create an address:
 
 ```java
 ProtectClient client = new ProtectClient(host, apiKey, apiSecret);
