@@ -7,7 +7,6 @@ import com.taurushq.sdk.protect.client.service.RequestService;
 import com.taurushq.sdk.protect.client.service.TransactionService;
 import com.taurushq.sdk.protect.client.service.WalletService;
 import com.taurushq.sdk.protect.openapi.ApiClient;
-import com.taurushq.sdk.protect.openapi.Configuration;
 import com.taurushq.sdk.protect.openapi.auth.ApiKeyTPV1Exception;
 
 import static com.google.common.base.Preconditions.checkArgument;
@@ -39,7 +38,7 @@ public class ProtectClient {
         checkArgument(!Strings.isNullOrEmpty(apiSecret), "apiSecret cannot be null or empty");
 
 
-        openApiClient = Configuration.getDefaultApiClient();
+        openApiClient = new ApiClient();
         openApiClient.setBasePath(host);
         openApiClient.setApiKeyTPV1(apiKey);
         openApiClient.setApiSecretTPV1(apiSecret);
