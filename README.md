@@ -50,25 +50,14 @@ provided [here](client/src/test/java/com/taurushq/sdk/protect/client/ProtectClie
 ProtectClient client = new ProtectClient(host, apiKey, apiSecret);
 
 Address a = null;
-try{
-a =client.
+try {
+    a = client.getAddressService().createAddress(1, "my address", "my comment", "");
+} catch (ApiException e) {
 
-getAddressService().
+    System.out.println(e.getMessage());
+    System.out.println(e.getError());
 
-createAddress(1,"my address","my comment","");
-}catch(
-ApiException e){
-
-        System.out.
-
-println(e.getMessage());
-        System.out.
-
-println(e.getError());
-
-        throw new
-
-RuntimeException(e);
+    throw new RuntimeException(e);
 }
 ```
 
