@@ -1,3 +1,8 @@
+<p align="center">
+    <img align="center" width="400" src=".assets/logo-protect-capital-w.png#gh-dark-mode-only">
+    <img align="center" width="400" src=".assets/logo-protect-capital.png#gh-light-mode-only">
+</p>
+
 # Taurus-PROTECT Java SDK
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
