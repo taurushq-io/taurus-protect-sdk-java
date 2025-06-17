@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This repository provides example Java code to consume some APIs of Taurus-PROTECT.
+This repository provides example Java code to consume a subset of APIs of Taurus-PROTECT.
 
 ## Organization
 
